@@ -135,7 +135,9 @@ resource "aws_instance" "web" {
   metadata_options {
     http_tokens = "required"
   }
-}resource "aws_s3_bucket" "public_bucket" {
+}
+
+resource "aws_s3_bucket" "public_bucket" {
   bucket = "my-public-test-bucket"
 }
 
